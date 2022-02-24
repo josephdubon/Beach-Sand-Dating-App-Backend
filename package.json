@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Faux dating app for my portfolio",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [
     "dating",
@@ -14,5 +16,10 @@
     "mongodb"
   ],
   "author": "Joseph Dubon",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3",
+    "nodemon": "^2.0.15"
+  }
 }
