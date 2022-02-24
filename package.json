@@ -1,0 +1,18 @@
+{
+  "name": "beach-sand-backend",
+  "version": "1.0.0",
+  "description": "Faux dating app for my portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dating",
+    "app",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Joseph Dubon",
+  "license": "ISC"
+}
