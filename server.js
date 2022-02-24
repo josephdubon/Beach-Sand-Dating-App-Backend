@@ -34,5 +34,15 @@ app.post('/dating/cards', (req, res) => {
     })
 })
 
-// Listener Config
-app.listen(port, () => console.log(`Currently listening on localhost: ${port}`))
+app.get('/dating/cards', (req, res) => {
+    Cards.find((err, data) => {
+        if (err) {
+            res.status(500).send(err)
+        } else {
+            res.status(200).send(data)
+        }
+    })
+})
+
+//Listener
+app.listen(port, () => console.log(`Listening on localhost: ${port}`))
