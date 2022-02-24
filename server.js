@@ -1,6 +1,9 @@
 import 'dotenv/config' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 import express from 'express'
-// import mongoose from "mongoose"
+import mongoose from 'mongoose'
+import Cors from 'cors'
+
+import Cards from './dbCards.js'
 
 // App Config
 const app = express()
