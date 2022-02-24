@@ -17,7 +17,7 @@ console.log(connection_uri)
 app.use(express.json())
 app.use(Cors())
 
-//DB Config
+// DB Config
 mongoose.connect(connection_uri)
 
 // API Endpoints
