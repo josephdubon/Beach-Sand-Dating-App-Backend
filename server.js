@@ -23,5 +23,16 @@ mongoose.connect(connection_uri)
 // API Endpoints
 app.get('/', (req, res) => res.status(200).send('Hello Joseph Dubon'))
 
+app.post('/dating/cards', (req, res) => {
+    const dbCard = req.body
+    Cards.create(dbCard, (err, data) => {
+        if (err) {
+            res.status(500).send(err + 'what did you do...?')
+        } else {
+            res.status(201).send(data)
+        }
+    })
+})
+
 // Listener Config
 app.listen(port, () => console.log(`Currently listening on localhost: ${port}`))
