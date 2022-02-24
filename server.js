@@ -14,6 +14,8 @@ const connection_uri = `mongodb+srv://${dbuser}:${dbpw}@cluster0.8qyol.mongodb.n
 console.log(connection_uri)
 
 // Middleware
+app.use(express.json())
+app.use(Cors())
 
 //DB Config
 mongoose.connect(connection_uri)
